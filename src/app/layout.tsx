@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Texas Web Craft - Coming Soon",
-  description: "Texas Web Craft - Professional web development services coming soon",
+  title: "Texas Web Art - Coming Soon",
+  description: "Texas Web Art - Professional web development services coming soon",
 }
 
 export default function RootLayout({
