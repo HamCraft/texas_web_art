@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Texas Web Art - Web Development & Design",
-  description: "Professional web development and design services in Texas",
+  description: "Professional web development and design services.",
 }
 
 export default function RootLayout({
@@ -19,9 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
+        
           {children}
-        </ThemeProvider>
       </body>
     </html>
   )
