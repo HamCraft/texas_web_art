@@ -1,11 +1,20 @@
+"use client"
+
 import Link from "next/link"
 import { Facebook, Twitter, Instagram, Linkedin, Github } from "lucide-react"
+import { motion } from "framer-motion"
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-background py-12">
+    <footer className="border-t-[1px] border-white bg-muted py-12">
       <div className="container">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <motion.div
+          className="grid gap-8 md:grid-cols-2 lg:grid-cols-4"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: false, amount: 0.2 }} // 👈 re-trigger on scroll back
+        >
           <div>
             <h3 className="mb-4 text-lg font-bold">Texas Web Art</h3>
             <p className="text-sm text-muted-foreground">
@@ -87,10 +96,17 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-        </div>
-        <div className="mt-12 border-t pt-6 text-center text-sm text-muted-foreground">
+        </motion.div>
+
+        <motion.div
+          className="mt-12 border-t pt-6 text-center text-sm text-muted-foreground"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: false, amount: 0.2 }} // 👈 also animate the bottom line
+        >
           <p>&copy; {new Date().getFullYear()} Texas Web Art. All rights reserved.</p>
-        </div>
+        </motion.div>
       </div>
     </footer>
   )
