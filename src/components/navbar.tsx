@@ -18,7 +18,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur bg-white text-black">
+    <nav className="sticky top-0 z-50 w-full border-b backdrop-blur bg-muted text-black">
       <div className="container flex h-20 items-center justify-between">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -48,7 +48,7 @@ export default function Navbar() {
             <Link
               key={item.name}
               href={item.href}
-              className="text-sm font-medium transition-colors hover:text-primary"
+              className="text-sm font-medium transition-colors text-white hover:text-primary"
             >
               {item.name}
             </Link>
