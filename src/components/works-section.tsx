@@ -12,9 +12,9 @@ export default function WorksSection() {
     {
       title: "E-Commerce Platform",
       description: "A fully responsive e-commerce website with integrated payment processing.",
-      image: "/placeholder.svg?height=300&width=500",
-      github: "https://github.com",
-      live: "https://example.com",
+      image: "/work1.png",
+      github: "https://github.com/HamCraft/ecommerce-sanity",
+      live: "https://ecommerce-sanity-cyan.vercel.app/",
     },
     {
       title: "Restaurant Website",
@@ -25,10 +25,10 @@ export default function WorksSection() {
     },
     {
       title: "Portfolio Site",
-      description: "Minimalist portfolio website for a professional photographer.",
-      image: "/placeholder.svg?height=300&width=500",
-      github: "https://github.com",
-      live: "https://example.com",
+      description: "Minimalist portfolio website for a software engineer.",
+      image: "/work3.png",
+      github: "https://github.com/HamCraft/portfolio",
+      live: "https://ahmedyaqoobdhedhiportfolio.vercel.app/",
     },
   ]
 

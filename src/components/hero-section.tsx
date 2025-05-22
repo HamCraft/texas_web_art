@@ -96,10 +96,10 @@ export default function HeroSection() {
               initial="hidden"
               animate={buttonControls}
             >
-              <Button asChild size="lg">
+              <Button className="contact-ka-button bg-blue-900 hover:bg-red-500 transition-colors duration-800 text-1xl" asChild size="lg">
                 <Link href="#contact">Get a Quote</Link>
               </Button>
-              <Button asChild variant="outline" size="lg">
+              <Button className="hover:bg-red-500 transition-colors duration-300 ease-in-out text-1xl" asChild variant="outline" size="lg">
                 <Link href="#works">View Our Work</Link>
               </Button>
             </motion.div>
@@ -142,7 +142,7 @@ export default function HeroSection() {
                 transition={{ duration: 0.3 }}
               >
                 <Image
-                  src="/about2.png"
+                  src="/herosec.png"
                   alt="Texas Web Art Hero"
                   width={600}
                   height={400}

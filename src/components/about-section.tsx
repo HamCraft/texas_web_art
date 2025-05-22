@@ -53,7 +53,7 @@ export default function AboutSection() {
             variants={fadeUp}
           >
             <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">About Us</h2>
-            <div className="space-y-4 text-blue-900">
+            <div className="space-y-4 text-slate-200">
               <p>
                 Texas Web Art is a team of passionate web developers and designers dedicated to creating exceptional
                 digital experiences for businesses of all sizes.
