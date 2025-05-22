@@ -6,9 +6,8 @@ import { Menu, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import Image from "next/image";
-import { motion } from "motion/react";
-import React from 'react';
-
+import { AnimatePresence, motion } from "framer-motion";
+import React from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,7 +51,7 @@ export default function Navbar() {
               height={80}
               className="max-h-16 w-auto object-contain"
             />
-          <h1 className="text-white text-2xl font-bold ">Texas Web Art</h1>
+            <h1 className="text-white text-2xl font-bold">Texas Web Art</h1>
           </Link>
         </motion.div>
 
@@ -79,7 +78,7 @@ export default function Navbar() {
             <Link
               href="#contact"
               onClick={() => setActiveSection("")}
-              className="contact-ka-button bg-blue-900 hover:bg-red-500 transition-colors duration-800 hover:font-extrabold"
+              className="contact-ka-button bg-blue-900 hover:bg-red-500 transition-colors duration-800 hover:font-extrabold "
             >
               Get Started
             </Link>
@@ -95,37 +94,70 @@ export default function Navbar() {
             </Button>
           </SheetTrigger>
           <SheetContent className="w-[100%]" side="right">
-            <div className="flex flex-col justify-center items-center gap-6 w-[100%] pt-6">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  onClick={() => {
-                    setActiveSection(item.href);
-                    setIsOpen(false);
-                  }}
-                  className={`text-lg font-medium transition-colors duration-300 ${
-                    activeSection === item.href ? "text-red-500" : "text-white"
-                  } hover:text-red-500`}
+            <AnimatePresence mode="wait">
+              {isOpen && (
+                <motion.div
+                  key="mobile-menu"
+                  initial={{ x: "100%", opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  exit={{ x: "100%", opacity: 0 }}
+                  transition={{ type: "spring", stiffness: 80, damping: 15 }}
+                  className="flex flex-col justify-center items-center gap-6 w-full pt-6"
                 >
-                  {item.name}
-                </Link>
-              ))}
-              <Button
-                className="w-full"
-                asChild
-                onClick={() => {
-                  setActiveSection("");
-                  setIsOpen(false);
-                }}
-              >
-                <Link href="#contact">Get Started</Link>
-              </Button>
-              <div className=" flex items-center gap-2 mt-4">
-                        <Phone className="h-4 w-4" />
-                        <span className="text-sm font-medium text-red-500 text-nowrap">Call us: (555) 123-4567</span>
-                      </div>
-            </div>
+                  {navItems.map((item, index) => (
+                    <motion.div
+                      key={item.name}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ delay: 0.05 * index }}
+                    >
+                      <Link
+                        href={item.href}
+                        onClick={() => {
+                          setActiveSection(item.href);
+                          setIsOpen(false);
+                        }}
+                        className={`text-lg font-medium transition-colors duration-300 ${
+                          activeSection === item.href ? "text-red-500" : "text-white"
+                        } hover:text-red-500`}
+                      >
+                        {item.name}
+                      </Link>
+                    </motion.div>
+                  ))}
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="w-full"
+                  >
+                    <Button
+                      asChild
+                      onClick={() => {
+                        setActiveSection("");
+                        setIsOpen(false);
+                      }}
+                      className="w-full contact-ka-button"
+                    >
+                      <Link href="#contact">Get Started</Link>
+                    </Button>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.25 }}
+                    className="flex items-center gap-2 mt-4"
+                  >
+                    <Phone className="h-4 w-4" />
+                    <span className="text-sm font-medium text-red-500 text-nowrap">
+                      Call us: (555) 123-4567
+                    </span>
+                  </motion.div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </SheetContent>
         </Sheet>
       </div>
