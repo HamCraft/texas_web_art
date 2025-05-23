@@ -17,30 +17,30 @@ export default function Footer() {
         >
           <div>
             <h3 className="mb-4 text-lg font-bold">Texas Web Art</h3>
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-slate-200">
               Creating beautiful, functional websites for businesses across Texas and beyond.
             </p>
           </div>
           <div>
             <h3 className="mb-4 text-lg font-bold">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm ">
               <li>
-                <Link href="#services" className="text-muted-foreground hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-primary">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-muted-foreground hover:text-primary">
+                <Link href="#about" className="text-slate-200 hover:text-primary">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#works" className="text-muted-foreground hover:text-primary">
+                <Link href="#works" className="text-slate-200 hover:text-primary">
                   Our Work
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-muted-foreground hover:text-primary">
+                <Link href="#contact" className="text-slate-200 hover:text-primary">
                   Contact
                 </Link>
               </li>
@@ -50,22 +50,22 @@ export default function Footer() {
             <h3 className="mb-4 text-lg font-bold">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#services" className="text-muted-foreground hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-primary">
                   Web Design
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-muted-foreground hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-primary">
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-muted-foreground hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-primary">
                   E-Commerce
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-muted-foreground hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-primary">
                   Branding
                 </Link>
               </li>
@@ -74,23 +74,23 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold">Connect With Us</h3>
             <div className="flex space-x-4">
-              <Link href="#" target="_blank" className="text-muted-foreground hover:text-primary">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-primary">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" target="_blank" className="text-muted-foreground hover:text-primary">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-primary">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" target="_blank" className="text-muted-foreground hover:text-primary">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-primary">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" target="_blank" className="text-muted-foreground hover:text-primary">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-primary">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://github.com/HamCraft" target="_blank" className="text-muted-foreground hover:text-primary">
+              <Link href="https://github.com/HamCraft" target="_blank" className="text-slate-200 hover:text-primary">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
@@ -99,7 +99,7 @@ export default function Footer() {
         </motion.div>
 
         <motion.div
-          className="mt-12 border-t pt-6 text-center text-sm text-muted-foreground"
+          className="mt-12 border-t pt-6 text-center text-sm text-slate-200"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}

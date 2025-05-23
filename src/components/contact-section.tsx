@@ -63,7 +63,7 @@ export default function ContactSection() {
           variants={fadeUp}
         >
           <h2 className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">Contact Us</h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-slate-200 ">
             Ready to start your project? Get in touch with us today.
           </p>
         </motion.div>

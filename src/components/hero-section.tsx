@@ -5,30 +5,24 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { motion, useInView, useAnimation } from "framer-motion"
 import { useEffect, useRef } from "react"
+import { useTypewriter, Cursor } from "react-simple-typewriter"
 
 export default function HeroSection() {
-  // Reference to the section element
   const sectionRef = useRef(null)
-
-  // Check if section is in view
   const isInView = useInView(sectionRef, { once: false, amount: 0.3 })
 
-  // Animation controls for different elements
   const titleControls = useAnimation()
   const textControls = useAnimation()
   const buttonControls = useAnimation()
   const imageControls = useAnimation()
 
-  // Trigger animations when section comes into view
   useEffect(() => {
     if (isInView) {
-      // Start animations in sequence
       titleControls.start("visible")
       textControls.start("visible")
       buttonControls.start("visible")
       imageControls.start("visible")
     } else {
-      // Reset animations when out of view
       titleControls.start("hidden")
       textControls.start("hidden")
       buttonControls.start("hidden")
@@ -36,14 +30,26 @@ export default function HeroSection() {
     }
   }, [isInView, titleControls, textControls, buttonControls, imageControls])
 
+  const [text] = useTypewriter({
+    words: [
+      '<span style="color:#1E3A8A">Build.</span>',
+      '<span style="color:white">Launch.</span>',
+      '<span style="color:#DC2626">Grow.</span>',
+    ],
+    loop: true,
+    delaySpeed: 10,
+    typeSpeed: 90,
+    deleteSpeed: 70,
+  })
+
   return (
     <section ref={sectionRef} className="relative overflow-hidden bg-muted py-12 md:py-20">
       <div className="container">
         <div className="grid items-center gap-8 md:grid-cols-2">
-          {/* Left side - Text content with animations */}
+          {/* Left side */}
           <div className="flex flex-col space-y-6">
             <motion.h1
-              className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl"
+              className="text-4xl font-bold tracking-tight sm:text-5xl md:text-7xl"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
@@ -51,31 +57,16 @@ export default function HeroSection() {
               initial="hidden"
               animate={titleControls}
             >
-              <motion.span
-                className="text-primary"
-                variants={{
-                  hidden: { opacity: 0 },
-                  visible: { opacity: 1, transition: { delay: 0.3, duration: 0.5 } },
-                }}
-                initial="hidden"
-                animate={titleControls}
-              >
-                Texas
-              </motion.span>{" "}
-              <motion.span
-                variants={{
-                  hidden: { opacity: 0 },
-                  visible: { opacity: 1, transition: { delay: 0.6, duration: 0.5 } },
-                }}
-                initial="hidden"
-                animate={titleControls}
-              >
-                Web Art
-              </motion.span>
+              <span
+                className="whitespace-nowrap"
+                dangerouslySetInnerHTML={{ __html: text }}
+              />
+              <Cursor cursorStyle="_"  />
+              
             </motion.h1>
 
             <motion.p
-              className="text-xl text-muted-foreground"
+              className="text-xl text-slate-200"
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { delay: 0.8, duration: 0.5 } },
@@ -105,7 +96,7 @@ export default function HeroSection() {
             </motion.div>
           </div>
 
-          {/* Right side - Image with animated border */}
+          {/* Right side */}
           <motion.div
             className="relative mx-auto w-full md:ml-auto"
             variants={{
@@ -116,7 +107,6 @@ export default function HeroSection() {
             animate={imageControls}
           >
             <div className="relative overflow-hidden rounded-lg">
-              {/* Animated border effect - this animation runs continuously regardless of scroll */}
               <motion.div
                 className="absolute -inset-1 rounded-lg bg-gradient-to-r from-primary via-red-500 to-blue-600 opacity-75"
                 animate={{
@@ -135,7 +125,6 @@ export default function HeroSection() {
                 }}
               />
 
-              {/* Actual image with a slight padding to show the animated border */}
               <motion.div
                 className="relative m-1 overflow-hidden rounded-lg bg-background"
                 whileHover={{ scale: 1.02 }}

@@ -17,11 +17,11 @@ export default function WorksSection() {
       live: "https://ecommerce-sanity-cyan.vercel.app/",
     },
     {
-      title: "Restaurant Website",
-      description: "Modern website for a local restaurant with online reservation system.",
-      image: "/placeholder.svg?height=300&width=500",
-      github: "https://github.com",
-      live: "https://example.com",
+      title: "Temu Clone Website",
+      description: "A Temu clone that replicates the user interface and core shopping experience using modern web technologies.",
+      image: "/work2.png",
+      github: "https://github.com/Jamila654/temu_clone_website",
+      live: "https://temu-clone-website.vercel.app/",
     },
     {
       title: "Portfolio Site",
@@ -34,7 +34,7 @@ export default function WorksSection() {
 
   return (
     <section id="works" className="bg-muted py-20">
-      <div className="container">
+      <div className="container ">
         <motion.div
           className="mb-12 text-center"
           initial={{ opacity: 0, y: 30 }}
@@ -43,7 +43,7 @@ export default function WorksSection() {
           viewport={{ once: false, amount: 0.2 }} // 👈 animation triggers every time it's visible
         >
           <h2 className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">Our Work</h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
+          <p className="mx-auto max-w-2xl text-slate-200">
             Check out some of our recent web development projects.
           </p>
         </motion.div>

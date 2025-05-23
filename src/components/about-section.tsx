@@ -39,7 +39,7 @@ export default function AboutSection() {
             variants={fadeUp}
           >
             <Image
-              src="/about2.png"
+              src="/about-grok.jpg"
               alt="Texas Web Art Team"
               height={550}
               width={550}

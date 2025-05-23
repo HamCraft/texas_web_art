@@ -65,7 +65,7 @@ export default function ServicesSection() {
       <div className="container" ref={ref}>
         <div className="mb-12 text-center">
           <h2 className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">Our Services</h2>
-          <p className="mx-auto max-w-2xl text-blue-200">
+          <p className="mx-auto max-w-2xl text-slate-200">
             We offer comprehensive web development solutions tailored to your business needs.
           </p>
         </div>
@@ -78,11 +78,11 @@ export default function ServicesSection() {
               animate={controls}
               variants={cardVariants}
             >
-              <Card className="border-2 border-blue-900  text-white transition-all hover:border-red-500">
+              <Card className="border-2 border-blue-900 h-[250px]  text-white transition-all hover:border-red-500 t">
                 <CardHeader className="flex items-center justify-center pt-6">{service.icon}</CardHeader>
-                <CardContent className="text-center">
+                <CardContent className="text-center -mt-2">
                   <CardTitle className="mb-2 mt-4 text-white">{service.title}</CardTitle>
-                  <CardDescription className="text-blue-200">{service.description}</CardDescription>
+                  <CardDescription className="text-blue-200 ">{service.description}</CardDescription>
                 </CardContent>
               </Card>
             </motion.div>
