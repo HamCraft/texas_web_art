@@ -43,7 +43,11 @@ export default function Navbar() {
           transition={{ duration: 0.3 }}
           className="flex items-center gap-2"
         >
-          <Link href="/" className="flex items-center gap-2" onClick={() => setActiveSection("")}>
+          <Link
+            href="/"
+            className="flex items-center gap-2"
+            onClick={() => setActiveSection("")}
+          >
             <Image
               src="/white_no_text.png"
               alt="logo"
@@ -51,7 +55,9 @@ export default function Navbar() {
               height={80}
               className="max-h-16 w-auto object-contain"
             />
-            <h1 className="text-white text-2xl font-bold">Texas Web Art</h1>
+            <h1 className="text-white md:text-2xl text-lg font-bold">
+              Texas Web Art
+            </h1>
           </Link>
         </motion.div>
 
@@ -88,10 +94,17 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
+            {/* <Button variant="ghost" size="icon">
               <Menu className="h-28 w-10" size={48} color="#ffffff" strokeWidth={1.75} />
               <span className="sr-only">Toggle menu</span>
-            </Button>
+            </Button> */}
+            <div
+              onClick={() => setIsOpen(true)}
+              className="p-3 rounded-md hover:bg-white/20 transition-all cursor-pointer"
+            >
+              <Menu className="h-10 w-10 text-white" strokeWidth={2} />
+              <span className="sr-only">Toggle menu</span>
+            </div>
           </SheetTrigger>
           <SheetContent className="w-[100%]" side="right">
             <AnimatePresence mode="wait">
@@ -118,7 +131,9 @@ export default function Navbar() {
                           setIsOpen(false);
                         }}
                         className={`text-lg font-medium transition-colors duration-300 ${
-                          activeSection === item.href ? "text-red-500" : "text-white"
+                          activeSection === item.href
+                            ? "text-red-500"
+                            : "text-white"
                         } hover:text-red-500`}
                       >
                         {item.name}
