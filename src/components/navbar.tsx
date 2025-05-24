@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, Phone } from "lucide-react";
+import { Menu, Phone, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
@@ -19,13 +19,12 @@ export default function Navbar() {
     { name: "Works", href: "#works" },
   ];
 
-  // Set active section on hash change or initial load
   useEffect(() => {
     const updateActiveSection = () => {
       setActiveSection(window.location.hash);
     };
 
-    updateActiveSection(); // On mount
+    updateActiveSection();
     window.addEventListener("hashchange", updateActiveSection);
 
     return () => {
@@ -94,10 +93,6 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            {/* <Button variant="ghost" size="icon">
-              <Menu className="h-28 w-10" size={48} color="#ffffff" strokeWidth={1.75} />
-              <span className="sr-only">Toggle menu</span>
-            </Button> */}
             <div
               onClick={() => setIsOpen(true)}
               className="p-3 rounded-md hover:bg-white/20 transition-all cursor-pointer"
@@ -106,7 +101,18 @@ export default function Navbar() {
               <span className="sr-only">Toggle menu</span>
             </div>
           </SheetTrigger>
-          <SheetContent className="w-[100%]" side="right">
+
+          <SheetContent className="w-[100%]  [&>button[data-state=closed]]:hidden" side="right">
+            {/* Custom Big Close X Button */}
+            <SheetClose asChild>
+              {/* <button
+                onClick={() => setIsOpen(false)}
+                className="absolute top-4 right-4 text-white hover:text-red-500"
+              >
+                <X size={32} strokeWidth={2.5} />
+              </button> */}
+            </SheetClose>
+
             <AnimatePresence mode="wait">
               {isOpen && (
                 <motion.div

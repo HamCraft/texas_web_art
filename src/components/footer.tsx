@@ -18,7 +18,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold">Texas Web Art</h3>
             <p className="text-sm text-slate-200">
-              Creating beautiful, functional websites for businesses across Texas and beyond.
+              Creating beautiful, functional websites for businesses all over the world.
             </p>
           </div>
           <div>
