@@ -76,7 +76,7 @@ export default function ContactSection() {
               </CardHeader>
               <CardContent className="text-center">
                 <CardTitle className="mb-2 mt-4">Location</CardTitle>
-                <CardDescription>Austin, Texas</CardDescription>
+                <CardDescription>Dallas, Texas</CardDescription>
               </CardContent>
             </Card>
           </div>

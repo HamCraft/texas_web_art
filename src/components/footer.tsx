@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 export default function Footer() {
   return (
-    <footer className="border-t-[1px] border-white bg-muted py-12">
+    <footer id="footer" className="border-t-[1px] border-white bg-muted py-12">
       <div className="container">
         <motion.div
           className="grid gap-8 md:grid-cols-2 lg:grid-cols-4"
@@ -71,22 +71,22 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          {/* <div>
+          <div>
             <h3 className="mb-4 text-lg font-bold">Connect With Us</h3>
             <div className="flex space-x-4">
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
+              <Link href="#footer" className="text-slate-200 hover:text-red-500">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
+              <Link href="#footer" className="text-slate-200 hover:text-red-500">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
+              <Link href="#footer"  className="text-slate-200 hover:text-red-500">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
+              <Link href="#footer" className="text-slate-200 hover:text-red-500">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
@@ -95,7 +95,7 @@ export default function Footer() {
                 <span className="sr-only">GitHub</span>
               </Link>
             </div>
-          </div> */}
+          </div>
         </motion.div>
 
         <motion.div
