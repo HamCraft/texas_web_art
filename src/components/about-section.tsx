@@ -59,7 +59,7 @@ export default function AboutSection() {
                 digital experiences for businesses of all sizes.
               </p>
               <p>
-                Founded in 2020, we've helped dozens of clients across Texas and beyond establish a strong online
+                Founded in 2024, we've helped dozens of clients all over the world establish a strong online
                 presence through custom website development, branding, and digital marketing.
               </p>
               <p>

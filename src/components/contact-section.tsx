@@ -52,7 +52,7 @@ export default function ContactSection() {
 
         <motion.div className="mx-auto max-w-4xl" initial="hidden" animate={controls} variants={fadeUp}>
           <div className="grid gap-8 md:grid-cols-3 ">
-            <Card className="border-2 border-blue-900 h-[250px]  text-white transition-all hover:border-red-500">
+            <Card className="border-2 border-blue-900 h-[200px]  text-white transition-all hover:border-red-500">
               <CardHeader className="flex items-center justify-center pt-6">
                 <Phone className="h-10 w-10 text-red-600" />
               </CardHeader>
@@ -61,7 +61,7 @@ export default function ContactSection() {
                 <CardDescription>(972) 885-8655</CardDescription>
               </CardContent>
             </Card>
-            <Card className="border-2 border-blue-900 h-[250px]  text-white transition-all hover:border-red-500">
+            <Card className="border-2 border-blue-900 h-[200px]  text-white transition-all hover:border-red-500">
               <CardHeader className="flex items-center justify-center pt-6">
                 <Mail className="h-10 w-10 text-red-600" />
               </CardHeader>
@@ -70,7 +70,7 @@ export default function ContactSection() {
                 <CardDescription>dhedhiahmedyaqoob@gmail.com</CardDescription>
               </CardContent>
             </Card>
-            <Card className="border-2 border-blue-900 h-[250px]  text-white transition-all hover:border-red-500">
+            <Card className="border-2 border-blue-900 h-[200px]  text-white transition-all hover:border-red-500">
               <CardHeader className="flex items-center justify-center pt-6">
                 <MapPin className="h-10 w-10 text-red-600" />
               </CardHeader>
