@@ -55,21 +55,19 @@ export default function AboutSection() {
             <h2 className="mb-6 text-3xl font-bold tracking-tight sm:text-4xl">About Us</h2>
             <div className="space-y-4 text-slate-200">
               <p>
-                Texas Web Art is a team of passionate web developers and designers dedicated to creating exceptional
-                digital experiences for businesses of all sizes.
+                Texas Web Art is a startup built on a shared passion for creativity, design, and digital innovation. We specialize in crafting custom websites that combine style with performance.
               </p>
               <p>
-                Founded in 2024, we've helped dozens of clients all over the world establish a strong online
-                presence through custom website development, branding, and digital marketing.
+                Founded in 2025, we’re just getting started—bringing fresh ideas and a strong commitment to quality, branding, and user-centered design to every project we take on.
+
               </p>
               <p>
-                Our approach combines technical expertise with creative design to deliver websites that not only look
-                great but also perform exceptionally well. We believe in building long-term relationships with our
-                clients, providing ongoing support and guidance as their businesses grow.
+                Our mission is to help businesses of all sizes stand out online through beautiful, functional websites that reflect their unique identity and goals.
+
               </p>
               <p>
-                Whether you're a small business looking to establish your first online presence or a larger company
-                seeking to revamp your digital strategy, we have the skills and experience to help you succeed.
+               
+As we grow, we’re focused on building strong, lasting relationships with our future clients by delivering creative solutions and dependable support every step of the way.
               </p>
             </div>
           </motion.div>

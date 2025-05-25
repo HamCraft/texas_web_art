@@ -72,14 +72,14 @@ export default function WorksSection() {
                   <CardTitle>{project.title}</CardTitle>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
-                <CardFooter className="flex justify-between">
+                <CardFooter className="flex justify-between gap-4">
                   <Button variant="outline" size="sm" asChild>
                     <Link href={project.github} target="_blank" rel="noopener noreferrer">
                       <Github className="mr-2 h-4 w-4" />
                       GitHub
                     </Link>
                   </Button>
-                  <Button size="sm" asChild>
+                  <Button size="sm" className="contact-ka-button bg-blue-900 hover:bg-red-500 transition-colors duration-800 hover:font-extrabold" asChild>
                     <Link href={project.live} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
                       View Live

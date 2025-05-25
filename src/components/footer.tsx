@@ -51,30 +51,30 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="#services" className="text-slate-200 hover:text-red-500">
-                  Web Design
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="text-slate-200 hover:text-red-500">
-                  Web Development
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="text-slate-200 hover:text-red-500">
-                  E-Commerce
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="text-slate-200 hover:text-red-500">
                   Branding
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="text-slate-200 hover:text-red-500">
+                  Creativity
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="text-slate-200 hover:text-red-500">
+                 Design
+                </Link>
+              </li>
+              <li>
+                <Link href="#services" className="text-slate-200 hover:text-red-500">
+                  Creativity
                 </Link>
               </li>
             </ul>
           </div>
-          <div>
+          {/* <div>
             <h3 className="mb-4 text-lg font-bold">Connect With Us</h3>
             <div className="flex space-x-4">
-              {/* <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
@@ -89,13 +89,13 @@ export default function Footer() {
               <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
-              </Link> */}
+              </Link>
               <Link href="https://github.com/HamCraft" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
             </div>
-          </div>
+          </div> */}
         </motion.div>
 
         <motion.div
