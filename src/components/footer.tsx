@@ -74,7 +74,7 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold">Connect With Us</h3>
             <div className="flex space-x-4">
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
+              {/* <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
@@ -89,7 +89,7 @@ export default function Footer() {
               <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
-              </Link>
+              </Link> */}
               <Link href="https://github.com/HamCraft" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
