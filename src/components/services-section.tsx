@@ -78,7 +78,7 @@ export default function ServicesSection() {
               animate={controls}
               variants={cardVariants}
             >
-              <Card className="border-2 border-blue-900 h-[250px]  text-white transition-all hover:border-red-500 t">
+              <Card className="border-2 border-blue-900 h-[250px]  text-white transition-all hover:border-red-500 ">
                 <CardHeader className="flex items-center justify-center pt-6">{service.icon}</CardHeader>
                 <CardContent className="text-center -mt-2">
                   <CardTitle className="mb-2 mt-4 text-white">{service.title}</CardTitle>

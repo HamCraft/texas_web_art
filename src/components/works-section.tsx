@@ -24,11 +24,11 @@ export default function WorksSection() {
       live: "https://temu-clone-website.vercel.app/",
     },
     {
-      title: "Portfolio Site",
-      description: "Minimalist portfolio website for a software engineer.",
+      title: "Restaurant Website",
+      description: "A modern restaurant website with payment integration and a user-friendly interface.",
       image: "/work3.png",
-      github: "https://github.com/HamCraft/portfolio",
-      live: "https://ahmedyaqoobdhedhiportfolio.vercel.app/",
+      github: "github.com/HamCraft/nextjs-hackathon",
+      live: "https://nextjs-hackathon-taupe.vercel.app/",
     },
   ]
 
@@ -58,7 +58,7 @@ export default function WorksSection() {
               viewport={{ once: false, amount: 0.2 }} // 👈 animate again when it comes back into view
               whileHover={{ scale: 1.02 }}
             >
-              <Card className="overflow-hidden">
+              <Card className="overflow-hidden h-[420px]">
                 <div className="aspect-video overflow-hidden">
                   <Image
                     src={project.image || "/placeholder.svg"}

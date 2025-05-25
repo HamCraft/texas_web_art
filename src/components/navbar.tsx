@@ -53,6 +53,7 @@ export default function Navbar() {
               width={150}
               height={80}
               className="max-h-16 w-auto object-contain"
+              priority
             />
             <h1 className="text-white md:text-2xl text-lg font-bold">
               Texas Web Art

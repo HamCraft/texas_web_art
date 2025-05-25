@@ -25,22 +25,22 @@ export default function Footer() {
             <h3 className="mb-4 text-lg font-bold">Quick Links</h3>
             <ul className="space-y-2 text-sm ">
               <li>
-                <Link href="#services" className="text-slate-200 hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-red-500">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-slate-200 hover:text-primary">
+                <Link href="#about" className="text-slate-200 hover:text-red-500">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#works" className="text-slate-200 hover:text-primary">
+                <Link href="#works" className="text-slate-200 hover:text-red-500">
                   Our Work
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-slate-200 hover:text-primary">
+                <Link href="#contact" className="text-slate-200 hover:text-red-500">
                   Contact
                 </Link>
               </li>
@@ -50,22 +50,22 @@ export default function Footer() {
             <h3 className="mb-4 text-lg font-bold">Services</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#services" className="text-slate-200 hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-red-500">
                   Web Design
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-slate-200 hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-red-500">
                   Web Development
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-slate-200 hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-red-500">
                   E-Commerce
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-slate-200 hover:text-primary">
+                <Link href="#services" className="text-slate-200 hover:text-red-500">
                   Branding
                 </Link>
               </li>
@@ -74,23 +74,23 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold">Connect With Us</h3>
             <div className="flex space-x-4">
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-primary">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-primary">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Twitter className="h-5 w-5" />
                 <span className="sr-only">Twitter</span>
               </Link>
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-primary">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
-              <Link href="#" target="_blank" className="text-slate-200 hover:text-primary">
+              <Link href="#" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </Link>
-              <Link href="https://github.com/HamCraft" target="_blank" className="text-slate-200 hover:text-primary">
+              <Link href="https://github.com/HamCraft" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
