@@ -27,38 +27,38 @@ export default function WorksSection() {
       title: "Restaurant Website",
       description: "A modern restaurant website with payment integration and a user-friendly interface.",
       image: "/work3.png",
-      github: "github.com/HamCraft/nextjs-hackathon",
+      github: "https://github.com/HamCraft/nextjs-hackathon",
       live: "https://nextjs-hackathon-taupe.vercel.app/",
     },
   ]
 
   return (
     <section id="works" className="bg-muted py-20">
-      <div className="container ">
+      <div className="container w-full h-screen mx-auto">
         <motion.div
           className="mb-12 text-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }} // 👈 animation triggers every time it's visible
+          viewport={{ once: false, amount: 0.2 }}
         >
           <h2 className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">Our Work</h2>
           <p className="mx-auto max-w-2xl text-slate-200">
             Check out some of our recent web development projects.
           </p>
+          <h1 className="animate-pulse text-3xl md:text-6xl text-white font-semibold mt-48 ">Coming Soon</h1>
         </motion.div>
-
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
           {projects.map((project, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: false, amount: 0.2 }} // 👈 animate again when it comes back into view
+              viewport={{ once: false, amount: 0.2 }}
               whileHover={{ scale: 1.02 }}
             >
-              <Card className="overflow-hidden h-[420px]">
+              {/* <Card className="overflow-hidden h-[420px] max-w-sm">
                 <div className="aspect-video overflow-hidden">
                   <Image
                     src={project.image || "/placeholder.svg"}
@@ -86,7 +86,7 @@ export default function WorksSection() {
                     </Link>
                   </Button>
                 </CardFooter>
-              </Card>
+              </Card> */}
             </motion.div>
           ))}
         </div>

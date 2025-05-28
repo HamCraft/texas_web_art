@@ -74,21 +74,13 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold">Connect With Us</h3>
             <div className="flex space-x-4">
-              <Link href="#footer" className="text-slate-200 hover:text-red-500">
+              <Link href="/https://www.instagram.com/texaswebart/" className="text-slate-200 hover:text-red-500">
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#footer" className="text-slate-200 hover:text-red-500">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#footer"  className="text-slate-200 hover:text-red-500">
+              <Link href="/https://www.facebook.com/profile.php?id=61576205826245"  className="text-slate-200 hover:text-red-500">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
-              </Link>
-              <Link href="#footer" className="text-slate-200 hover:text-red-500">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
               </Link>
               <Link href="https://github.com/HamCraft" target="_blank" className="text-slate-200 hover:text-red-500">
                 <Github className="h-5 w-5" />

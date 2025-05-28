@@ -65,6 +65,18 @@ export default function HeroSection() {
               
             </motion.h1>
 
+            <motion.h1
+              className="text-xl text-slate-200"
+              variants={{
+                hidden: { opacity: 0, y: 20 },
+                visible: { opacity: 1, y: 0, transition: { delay: 0.8, duration: 0.5 } },
+              }}
+              initial="hidden"
+              animate={textControls}
+            >
+              Now offering free services to our first 5 clients - just bring your domain!
+            </motion.h1>
+
             <motion.p
               className="text-xl text-slate-200"
               variants={{
@@ -77,6 +89,8 @@ export default function HeroSection() {
               We create stunning, functional websites that help your business grow. Our team of experts is ready to
               bring your vision to life.
             </motion.p>
+
+            
 
             <motion.div
               className="flex flex-col gap-4 sm:flex-row"
