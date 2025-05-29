@@ -66,7 +66,7 @@ export default function HeroSection() {
             </motion.h1>
 
             <motion.h1
-              className="text-xl text-slate-200"
+              className="text-xl text-white animate-pulse "
               variants={{
                 hidden: { opacity: 0, y: 20 },
                 visible: { opacity: 1, y: 0, transition: { delay: 0.8, duration: 0.5 } },
@@ -74,7 +74,7 @@ export default function HeroSection() {
               initial="hidden"
               animate={textControls}
             >
-              Now offering free services to our first 5 clients - just bring your domain!
+              Web services starting at $49.99 - just bring your domain!
             </motion.h1>
 
             <motion.p
