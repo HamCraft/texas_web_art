@@ -80,7 +80,7 @@ export default function HeroSection() {
               initial="hidden"
               animate={textControls}
             >
-              Web services from{" "}
+              Web services starting from{" "}
               <span className="text-amber-300 font-semibold">$49.99</span> —
               just bring your domain!
             </motion.h2>
