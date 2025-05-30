@@ -128,7 +128,7 @@ export default function HeroSection() {
                 variant="outline"
                 size="lg"
               >
-                <Link href="#works">View Our Work</Link>
+                <Link href="#works">View Our Works</Link>
               </Button>
             </motion.div>
           </div>
