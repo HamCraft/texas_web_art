@@ -46,7 +46,7 @@ export default function ContactSection() {
     <section id="contact" className="bg-muted py-20">
       <div className="container" ref={ref}>
         <motion.div className="mb-12 text-center" initial="hidden" animate={controls} variants={fadeUp}>
-          <h2 className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">Contact Us</h2>
+          <h2 className="mb-2 text-3xl font-bold tracking-tight sm:text-4xl">Contact Texas Web Art</h2>
           <p className="mx-auto max-w-2xl text-slate-200">Ready to start your project? Get in touch with us today.</p>
         </motion.div>
 
@@ -117,7 +117,7 @@ export default function ContactSection() {
                     <Textarea
                       id="message"
                       name="message"
-                      placeholder="Tell us about your project"
+                      placeholder="Tell us about your web design project"
                       rows={5}
                       required
                       disabled={isPending}
