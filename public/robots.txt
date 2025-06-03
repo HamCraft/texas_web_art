@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.texaswebart.com/
+
+# Sitemaps
+Sitemap: https://www.texaswebart.com/sitemap.xml
