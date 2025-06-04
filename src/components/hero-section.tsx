@@ -109,7 +109,7 @@ export default function HeroSection() {
                 animate={textControls}
               >
                 Web services starting from{" "}
-                <span className="text-amber-300 font-semibold">$49.99</span> —
+                <span className="text-amber-300 font-semibold">$59.99</span> —
                 just bring your domain!
               </motion.h2>
 
