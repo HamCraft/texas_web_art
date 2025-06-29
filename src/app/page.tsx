@@ -7,6 +7,7 @@ import AboutSection from "@/components/about-section"
 import ContactSection from "@/components/contact-section"
 import Footer from "@/components/footer"
 import Script from "next/script"
+import WhatsAppButton from "@/components/whatsapp-button"
 
 // ✅ SEO Metadata (Next.js 14 App Router style)
 export const metadata = {
@@ -74,6 +75,7 @@ export default function Home() {
       <WorksSection />
       <ContactSection />
       <Footer />
+      <WhatsAppButton />
     </main>
   )
 }

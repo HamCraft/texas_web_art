@@ -35,6 +35,23 @@
   --radius: 0.5rem;
 }
 
+/* muted 1 */
+/* --muted: 217.2 32.6% 45%; */
+
+
+/* muted 2 */
+/* --muted: 217.2 32.6% 75%; */
+
+
+/* muted 3 */
+/* --muted: 217.2 20% 65%; */
+
+
+
+
+
+
+
 @layer base {
   * {
     @apply border-border;
