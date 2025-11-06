@@ -36,7 +36,7 @@ export async function sendContactEmail(prevState: ActionResult | null, formData:
     // Send email using Resend
     await resend.emails.send({
       from: "onboarding@resend.dev", // Resend's default domain
-      to: "dhedhiahmedyaqoob@gmail.com", // Your Gmail address
+      to: "texaswebart@gmail.com", // Your Gmail address
       subject: `New Contact Form Submission from ${data.name}`,
       html: `
         <h2>New Contact Form Submission</h2>
