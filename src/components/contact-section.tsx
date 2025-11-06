@@ -67,7 +67,7 @@ export default function ContactSection() {
               </CardHeader>
               <CardContent className="text-center">
                 <CardTitle className="mb-2 mt-4">Email</CardTitle>
-                <CardDescription>dhedhiahmedyaqoob@gmail.com</CardDescription>
+                <CardDescription>texaswebart@gmail.com</CardDescription>
               </CardContent>
             </Card>
             <Card className="border-2 border-blue-900 h-[200px]  text-white transition-all hover:border-red-500">
